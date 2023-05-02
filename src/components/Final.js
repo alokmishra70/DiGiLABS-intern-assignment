@@ -11,7 +11,7 @@ import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import AddressForm from './AddressForm';
+import AddressForm from './AccountForm';
 
 
 function Copyright() {
@@ -35,7 +35,7 @@ function getStepContent(step) {
 
 const theme = createTheme();
 
-export default function Checkout() {
+export default function Final() {
   const [activeStep, setActiveStep] = React.useState(0);
 
  

@@ -1,6 +1,4 @@
-// import logo from './logo.svg';
-// import AddressForm from './components/AddressForm';
-import Checkout from "./components/Checkout";
+import Checkout from "./components/Final";
 
 
 function App() {
