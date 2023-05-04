@@ -12,6 +12,8 @@ import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import AddressForm from './AccountForm';
+import pic from './image/Lookscout.png';
+
 
 
 function Copyright() {
@@ -43,6 +45,7 @@ export default function Final() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      
       <AppBar
         position="absolute"
         color="default"
@@ -52,13 +55,14 @@ export default function Final() {
           borderBottom: (t) => `1px solid ${t.palette.divider}`,
         }}
       >
+      
      
       </AppBar>
+      <Typography align="center" sx={{ mt: 3 }}>
+      <span><img src={pic} /></span>
+      </Typography>
       <Container component="main" maxWidth="sm" sx={{ mb: 4 }}>
         <Paper variant="outlined" sx={{ my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 } }}>
-          <Typography component="h1" variant="h4" align="center">
-          Lookscout
-          </Typography>
           <Stepper activeStep={activeStep} sx={{ pt: 3, pb: 5 }}>
             {steps.map((label) => (
               <Step key={label}>
